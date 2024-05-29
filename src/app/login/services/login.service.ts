@@ -24,8 +24,8 @@ import { environment } from "src/environments/environment";
     ){this.getAuthentication()}
 
     authenticate(userNm: string, password: string){
-        console.log(this.url);
-        console.log(environment.URL_USERS);
+        console.log("proxy: ", this.url);
+        console.log("environment: ", environment.URL_USERS);
 
         let result= new IAuthResponse();
         return this.http.get<IAuth[]>(this.url).pipe(
@@ -51,6 +51,7 @@ import { environment } from "src/environments/environment";
                 return result;
             }),
             catchError((error: any) => {
+                console.log("error: ", error);
                 this.store.dispatch(new LoginActios.LogoutUser());                
                 result.errorMessage = error_message_handler(error);
                 return throwError(error);

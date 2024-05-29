@@ -14,7 +14,7 @@ import * as LoginActios from './login/store/login.action';
   styleUrls:['./app.component.css']
 })
 export class AppComponent implements OnInit { 
-  pageTitle: string = 'Product Inventory'; 
+  pageTitle: string = 'this is a test of product inventory'; 
   userName: string ='';
   isAuth: boolean = false;
 

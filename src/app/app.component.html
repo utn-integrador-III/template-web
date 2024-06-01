@@ -1,29 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<nav class= 'navbar navbar-expand navbar-light bg-light'>
-    <a class='navbar-brand'>{{pageTitle}}</a>
-    <ul class='nav nav-pills'>
-      <li><a class='nav-link' [routerLink] = "['/home']">Home</a></li>
-      <li><a class='nav-link' [routerLink] = "['/products']">Product List</a></li>
-    </ul>
-    <!-- <a class='navbar-brand user-name'>{{userName}}</a> -->
-    <button class="btn btn-primary" (click) = 'logOut()' *ngIf="isAuth">
-      Logout
-    </button>
-  </nav>
-  <div class='container'>
-     <router-outlet></router-outlet>
-  </div>
-=======
-=======
->>>>>>> 7f8778e (Merge remote-tracking branch 'origin/dev' into US-007)
 <nav class='navbar navbar-expand navbar-light bg-light'>
   <a class='navbar-brand'>{{pageTitle}}</a>
   <ul class='nav nav-pills'>
     <li><a class='nav-link' [routerLink]="['/home']">Home</a></li>
     <li><a class='nav-link' [routerLink]="['/products']">Product List</a></li>
   </ul>
-  <a class='navbar-brand user-name'>{{userName}}</a>
+  <!-- <a class='navbar-brand user-name'>{{userName}}</a> -->
   <button class="btn btn-primary" (click)='logOut()' *ngIf="isAuth">
     Logout
   </button>
@@ -31,9 +12,3 @@
 <div class='container'>
   <router-outlet></router-outlet>
 </div>
-<<<<<<< HEAD
-<!-- Prueba de commit -->
->>>>>>> 7f8778e (Merge remote-tracking branch 'origin/dev' into US-007)
-=======
-<!-- Prueba de commit -->
->>>>>>> 7f8778e (Merge remote-tracking branch 'origin/dev' into US-007)
